@@ -876,7 +876,7 @@ pre {
     flex-grow: 1;
     max-width: 100%; }
 .underline {
-  width: 100%;
+  width: 50%;
   height: 4px;
   background-image: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(244, 244, 125) 20%,rgb(238, 238, 36) 50%, #ffbd39 100%);
   margin-top: 5px;
