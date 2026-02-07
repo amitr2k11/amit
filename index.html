@@ -681,57 +681,73 @@
   
   <script src="js/main.js"></script>
 
-  <!-- Chatbot Widget -->
-<div id="amit-chatbot" style="
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 320px;
-  max-height: 420px;
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-  display: flex;
-  flex-direction: column;
-  font-family: Arial, sans-serif;
-  z-index: 9999;
-">
-  <div style="background:#111827;color:#fff;padding:10px 12px;border-radius:12px 12px 0 0;">
-    💬 Ask about Amit
+<!-- Chatbot Widget -->
+<div id="chatbot">
+  <div id="chat-header">Ask About Amit</div>
+
+  <div id="chat-messages"></div>
+
+  <div style="padding:8px;">
+    <button onclick="sendPreset('Who is Amit Ranjan?')">Who is Amit?</button>
+    <button onclick="sendPreset('Which company does Amit work for?')">Company</button>
+    <button onclick="sendPreset('What experience does Amit have?')">Experience</button>
   </div>
-  <div id="chat-messages" style="flex:1; padding:10px; overflow-y:auto; font-size:14px;"></div>
-  <div style="display:flex; border-top:1px solid #eee;">
-    <input id="chat-input" placeholder="Type your question..." 
-      style="flex:1; padding:8px; border:none; outline:none;" />
-    <button onclick="sendChat()" style="padding:8px 12px; border:none; background:#2563eb; color:white; cursor:pointer;">
-      Send
-    </button>
+
+  <div id="chat-input-area">
+    <input id="chat-input" placeholder="Ask about Amit..." />
+    <button onclick="sendMessage()">Send</button>
   </div>
 </div>
-
 <script>
-async function sendChat() {
-  const input = document.getElementById("chat-input");
-  const msg = input.value.trim();
-  if (!msg) return;
+const chatBox = document.getElementById("chat-messages");
+const input = document.getElementById("chat-input");
 
-  const messagesDiv = document.getElementById("chat-messages");
-  messagesDiv.innerHTML += `<div><b>You:</b> ${msg}</div>`;
+function typeText(element, text, speed = 15) {
+  element.innerText = "";
+  let i = 0;
+  const interval = setInterval(() => {
+    element.innerText += text[i];
+    i++;
+    if (i >= text.length) clearInterval(interval);
+  }, speed);
+}
+
+function appendMessage(sender, text, isBot = false) {
+  const msg = document.createElement("div");
+  msg.innerHTML = `<b>${sender}:</b> `;
+  chatBox.appendChild(msg);
+
+  if (isBot) {
+    const span = document.createElement("span");
+    msg.appendChild(span);
+    typeText(span, text);
+  } else {
+    msg.innerHTML += text;
+  }
+
+  chatBox.scrollTop = chatBox.scrollHeight;
+}
+
+async function sendMessage() {
+  const userMsg = input.value.trim();
+  if (!userMsg) return;
+
+  appendMessage("You", userMsg);
   input.value = "";
 
-  try {
-    const res = await fetch("https://YOUR_BACKEND_URL/chat", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ message: msg })
-    });
+  const response = await fetch("http://127.0.0.1:8000/chat", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ question: userMsg })
+  });
 
-    const data = await res.json();
-    messagesDiv.innerHTML += `<div style="margin-top:6px;"><b>AmitBot:</b> ${data.reply}</div>`;
-    messagesDiv.scrollTop = messagesDiv.scrollHeight;
-  } catch (e) {
-    messagesDiv.innerHTML += `<div style="color:red;">Bot is offline right now.</div>`;
-  }
+  const data = await response.json();
+  appendMessage("Bot", data.answer, true);
+}
+
+function sendPreset(text) {
+  input.value = text;
+  sendMessage();
 }
 </script>
   
