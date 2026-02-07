@@ -787,7 +787,6 @@ function typeText(element, text, speed = 15) {
 
 function appendMessage(sender, text, isBot = false) {
   const msg = document.createElement("div");
-  msg.className = isBot ? "bot-msg" : "user-msg";
   msg.innerHTML = `<b>${sender}:</b> `;
   chatBox.appendChild(msg);
 
@@ -810,7 +809,7 @@ async function sendMessage() {
   input.value = "";
 
   const response = await fetch(
-    "https://indicator-publisher-label-rugby.trycloudflare.com/chat",
+    "https://YOUR-TUNNEL.trycloudflare.com/chat",
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },
