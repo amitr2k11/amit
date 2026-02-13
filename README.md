@@ -1,10 +1,3 @@
-Perfect 😎🔥
-Here is your **GitHub-optimized README.md with professional badges** — clean, modern, recruiter-friendly, and impressive.
-
-You can copy-paste this directly into your `README.md`.
-
----
-
 # 🚀 AI-Powered Portfolio Chatbot
 
 ### Retrieval-Augmented Generation (RAG) using FastAPI + Ollama
