@@ -94,7 +94,6 @@ Response → Frontend UI
 
 ## 📁 Project Structure
 ---
-
 Frontend (GitHub Pages)
 amit.github.io/
 │── index.html
@@ -110,6 +109,7 @@ RAG-Portfolio-Backend/
 │── Data/
 │   └── profile.txt
 │── .gitignore
+
 ---
 
 ## ⚙️ Local Setup
