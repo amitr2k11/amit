@@ -20,12 +20,11 @@
 ## 🌐 Live Demo
 
 * 🌍 **Portfolio Website:**
-  👉 [https://amitr2k11.github.io/](https://amitr2k11.github.io/amit)
+  👉 [https://amitr2k11.github.io/](https://amitr2k11.github.io/)
 
 * 🤖 **AI Chatbot (Backend via Cloudflare Tunnel)**
   Dynamically answers questions about my experience using RAG.
 
-* Backend Repository: https://github.com/amitr2k11/RAG-Portfolio-Backend
 ---
 
 ## 🧠 Project Overview
@@ -45,27 +44,26 @@ All powered locally — **no OpenAI API cost**.
 ---
 
 ## 🏗️ Architecture
----
 
-User (Browser - GitHub Pages)
+```
+User (Frontend - GitHub Pages)
+        │
+        ▼
+JavaScript Fetch Request
+        │
+        ▼
+FastAPI Backend (/chat)
+        │
+        ▼
+FAISS Vector Store (RAG Retrieval)
+        │
+        ▼
+Ollama LLM (phi3 / llama3)
+        │
+        ▼
+Response → Typing Animation UI
+```
 
-        ↓
-JavaScript fetch()
-
-        ↓
-Cloudflare Tunnel URL
-
-        ↓
-FastAPI Backend (/chat endpoint)
-
-        ↓
-RAG Pipeline (LangChain + FAISS)
-
-        ↓
-Ollama (phi3 / llama3)
-
-        ↓
-Response → Frontend UI
 ---
 
 ## 🧩 Tech Stack
@@ -93,39 +91,23 @@ Response → Frontend UI
 ---
 
 ## 📁 Project Structure
----
-Frontend (GitHub Pages)
+
+```
 amit.github.io/
-│── index.html
-│── css/
-│── js/
-│── images/
-
-Backend (Separate Repository)
-RAG-Portfolio-Backend/
-│── app.py
-│── rag.py
-│── requirements.txt
-│── Data/
-│   └── profile.txt
-│── .gitignore
+│
+├── index.html
+├── styles.css
+├── README.md
+│
+└── chatbot-backend/
+    ├── app.py
+    ├── requirements.txt
+    ├── Data/
+    │   └── profile.txt
+    └── .env (ignored)
+```
 
 ---
-
-## 🔗 Repository Structure
-
-This project is split into two repositories:
-
-- **Frontend (GitHub Pages):**
-https://github.com/amitr2k11/amit.git
-
-- **Backend (FastAPI + RAG):**
-  https://github.com/amitr2k11/RAG-Portfolio-Backend.git
-
-This separation ensures:
-- Secure backend isolation
-- Cleaner Git history
-- Production-ready architecture
 
 ## ⚙️ Local Setup
 
@@ -219,7 +201,7 @@ Product Consultant | AI Builder | Data-Driven Problem Solver
 [https://www.linkedin.com/in/amitrnjan/](https://www.linkedin.com/in/amitrnjan/)
 
 🌐 Portfolio:
-[https://amitr2k11.github.io/](https://amitr2k11.github.io/amit/)
+[https://amitr2k11.github.io/](https://amitr2k11.github.io/)
 
 ---
 

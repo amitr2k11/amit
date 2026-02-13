@@ -1,0 +1,66 @@
+Name: Amit Ranjan
+
+Location: Pune, India
+
+Current Role:
+Product Consultant at Acoustic (US-based marketing automation company)
+
+Professional Summary:
+Amit Ranjan is a data-driven Product Consultant with over 5 years of experience in product analytics, data science, and marketing technology. He specializes in translating business requirements into scalable product solutions.
+
+Experience:
+
+1. Acoustic (Product Consultant)
+- Lead data discovery sessions with enterprise clients
+- Work on marketing automation and customer engagement platforms
+- Manage integrations, analytics use cases, and client solutions
+- Collaborate with cross-functional teams across US markets
+
+2. Rwazi (Product Analyst - Data Science)
+- Built scalable data pipelines
+- Performed analytics on consumer and market datasets
+- Implemented XML API integrations
+- Leveraged web analytics for insights
+
+3. Solera (Product Analyst)
+- Built data models for MAN Driver application
+- Implemented push notifications for real-time updates
+- Worked in Agile environment
+- Focused on fleet management analytics
+
+4. Loconav (Business Analyst)
+- Prioritized features for fleet management application
+- Delivered fuel monitoring system improving retention and contract value
+- Conducted customer research and market analysis
+
+5. IndiaMART (Data Analyst)
+- Worked on marketplace analytics
+- Performed data cleaning and transformation
+- Generated business intelligence reports
+
+Core Skills:
+- Product Management
+- Data Analytics
+- SQL
+- Python (Pandas, Scikit-learn, Statsmodels)
+- Marketing Automation
+- API Integrations
+- Agile Methodologies
+- Data Modeling
+- Customer Analytics
+- Business Intelligence
+
+Technical Stack:
+- Python
+- FastAPI
+- LangChain
+- Ollama
+- FAISS
+- Snowflake
+- dbt
+- AWS
+- Databricks
+- Fivetran
+
+Career Focus:
+Amit aims to build AI-powered products that improve business productivity and decision-making through automation and intelligent analytics.
