@@ -117,7 +117,7 @@ RAG-Portfolio-Backend/
 This project is split into two repositories:
 
 - **Frontend (GitHub Pages):**
-  https://amit2k11.github.io/
+  https://amit2k11.github.io/amit/
 
 - **Backend (FastAPI + RAG):**
   https://github.com/amit2k11/RAG-Portfolio-Backend
