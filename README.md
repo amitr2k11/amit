@@ -112,6 +112,21 @@ RAG-Portfolio-Backend/
 
 ---
 
+## 🔗 Repository Structure
+
+This project is split into two repositories:
+
+- **Frontend (GitHub Pages):**
+  https://amit2k11.github.io/
+
+- **Backend (FastAPI + RAG):**
+  https://github.com/amit2k11/RAG-Portfolio-Backend
+
+This separation ensures:
+- Secure backend isolation
+- Cleaner Git history
+- Production-ready architecture
+
 ## ⚙️ Local Setup
 
 ### 1️⃣ Install Ollama
