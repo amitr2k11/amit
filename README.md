@@ -45,6 +45,7 @@ All powered locally — **no OpenAI API cost**.
 ---
 
 ## 🏗️ Architecture
+---
 
 User (Browser - GitHub Pages)
 
@@ -92,6 +93,7 @@ Response → Frontend UI
 ---
 
 ## 📁 Project Structure
+---
 
 Frontend (GitHub Pages)
 amit.github.io/
@@ -108,6 +110,7 @@ RAG-Portfolio-Backend/
 │── Data/
 │   └── profile.txt
 │── .gitignore
+---
 
 ## ⚙️ Local Setup
 
