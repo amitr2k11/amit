@@ -120,7 +120,7 @@ This project is split into two repositories:
 https://github.com/amitr2k11/amit.git
 
 - **Backend (FastAPI + RAG):**
-  https://github.com/amit2k11/RAG-Portfolio-Backend.git
+  https://github.com/amitr2k11/RAG-Portfolio-Backend.git
 
 This separation ensures:
 - Secure backend isolation
