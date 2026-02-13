@@ -201,7 +201,7 @@ Product Consultant | AI Builder | Data-Driven Problem Solver
 [https://www.linkedin.com/in/amitrnjan/](https://www.linkedin.com/in/amitrnjan/)
 
 🌐 Portfolio:
-[https://amitr2k11.github.io/](https://amitr2k11.github.io/)
+[https://amitr2k11.github.io/](https://amitr2k11.github.io/amit/)
 
 ---
 
