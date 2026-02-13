@@ -20,11 +20,12 @@
 ## 🌐 Live Demo
 
 * 🌍 **Portfolio Website:**
-  👉 [https://amitr2k11.github.io/](https://amitr2k11.github.io/)
+  👉 [https://amitr2k11.github.io/](https://amitr2k11.github.io/amit)
 
 * 🤖 **AI Chatbot (Backend via Cloudflare Tunnel)**
   Dynamically answers questions about my experience using RAG.
 
+* Backend Repository: https://github.com/amitr2k11/RAG-Portfolio-Backend
 ---
 
 ## 🧠 Project Overview
@@ -45,25 +46,25 @@ All powered locally — **no OpenAI API cost**.
 
 ## 🏗️ Architecture
 
-```
-User (Frontend - GitHub Pages)
-        │
-        ▼
-JavaScript Fetch Request
-        │
-        ▼
-FastAPI Backend (/chat)
-        │
-        ▼
-FAISS Vector Store (RAG Retrieval)
-        │
-        ▼
-Ollama LLM (phi3 / llama3)
-        │
-        ▼
-Response → Typing Animation UI
-```
+User (Browser - GitHub Pages)
 
+        ↓
+JavaScript fetch()
+
+        ↓
+Cloudflare Tunnel URL
+
+        ↓
+FastAPI Backend (/chat endpoint)
+
+        ↓
+RAG Pipeline (LangChain + FAISS)
+
+        ↓
+Ollama (phi3 / llama3)
+
+        ↓
+Response → Frontend UI
 ---
 
 ## 🧩 Tech Stack
@@ -92,22 +93,21 @@ Response → Typing Animation UI
 
 ## 📁 Project Structure
 
-```
+Frontend (GitHub Pages)
 amit.github.io/
-│
-├── index.html
-├── styles.css
-├── README.md
-│
-└── chatbot-backend/
-    ├── app.py
-    ├── requirements.txt
-    ├── Data/
-    │   └── profile.txt
-    └── .env (ignored)
-```
+│── index.html
+│── css/
+│── js/
+│── images/
 
----
+Backend (Separate Repository)
+RAG-Portfolio-Backend/
+│── app.py
+│── rag.py
+│── requirements.txt
+│── Data/
+│   └── profile.txt
+│── .gitignore
 
 ## ⚙️ Local Setup
 
