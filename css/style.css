@@ -9703,3 +9703,33 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+.skills-section h6 {
+  margin-top: 20px;
+  font-weight: 600;
+  color: #f4b400;
+}
+
+.skills-section ul {
+  padding-left: 18px;
+}
+
+.skills-section li {
+  margin-bottom: 6px;
+}
+
+.impact-section h2 {
+  color: #f4b400;
+  font-weight: 700;
+}
+
+.impact-section h3 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.impact-section p {
+  color: #ccc;
+  font-size: 14px;
+}
