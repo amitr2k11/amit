@@ -9733,3 +9733,142 @@ textarea.form-control {
   color: #ccc;
   font-size: 14px;
 }
+/* ===== PROJECT CARD UPGRADE ===== */
+
+.project-card {
+    background: #111;
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(244, 180, 0, 0.15);
+    border: 1px solid rgba(244, 180, 0, 0.3);
+}
+
+.project-card img {
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 15px;
+    color: #cfcfcf;
+    line-height: 1.6;
+
+}
+.counter {
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+}
+html {
+    scroll-behavior: smooth;
+}
+section {
+    padding: 100px 0;
+}
+.section-divider {
+    width: 80px;
+    height: 3px;
+    background: #f4b400;
+    margin: 20px auto 40px auto;
+    border-radius: 2px;
+}
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(244,180,0,0.3);
+    transition: 0.3s ease;
+}
+h2 {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+p {
+    color: #c9c9c9;
+}
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.hero-buttons .btn-primary {
+    background: #f4b400;
+    border: none;
+    font-weight: 600;
+}
+
+.hero-buttons .btn-outline-light {
+    border: 1px solid #f4b400;
+    color: #f4b400;
+}
+
+.hero-buttons .btn-outline-light:hover {
+    background: #f4b400;
+    color: #000;
+}
+/* ===== Projects Cover Banner ===== */
+
+.projects-banner {
+    position: relative;
+    background: url('images/analytics-cover.jpg') center center / cover no-repeat;
+    background-attachment: fixed; /* Parallax effect */
+    padding: 140px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Overlay */
+.projects-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.85),
+        rgba(0, 0, 0, 0.75)
+    );
+}
+
+/* Keep content above overlay */
+.projects-banner .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Heading */
+.projects-banner h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Subtitle */
+.projects-banner p {
+    font-size: 18px;
+    color: #dddddd;
+    margin-bottom: 30px;
+}
+
+/* Button Styling */
+.projects-banner .btn {
+    background: #f4b400;
+    border: none;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.projects-banner .btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(244, 180, 0, 0.4);
+}
