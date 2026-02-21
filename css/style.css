@@ -8940,7 +8940,7 @@ h1, h2, h3, h4, h5,
   .ftco-hireme h2 {
     color: #fff;
     font-size: 40px;
-    font-weight: 900; }
+    font-weight: 600; }
     .ftco-hireme h2 span {
       color: #ffbd39; }
 
@@ -9222,7 +9222,7 @@ textarea.form-control {
 
   .heading-section h2 {
     font-size: 50px;
-    font-weight: 700; }
+    font-weight: 600; }
     .heading-section h2 span {
       font-weight: 400; }
     @media (max-width: 767.98px) {
@@ -9720,7 +9720,7 @@ textarea.form-control {
 
 .impact-section h2 {
   color: #f4b400;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .impact-section h3 {
@@ -9738,7 +9738,7 @@ textarea.form-control {
 .project-card {
     background: #111;
     border-radius: 12px;
-    padding: 20px;
+    padding: 18px 22px;
     transition: all 0.3s ease;
     border: 1px solid rgba(255,255,255,0.05);
 }
@@ -9790,7 +9790,7 @@ section {
     transition: 0.3s ease;
 }
 h2 {
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 0.5px;
 }
 p {
@@ -9847,7 +9847,7 @@ p {
 /* Heading */
 .projects-banner h2 {
     font-size: 42px;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 20px;
 }
 
@@ -9914,4 +9914,22 @@ body {
 .hero-heading {
     max-width: 750px;
     margin: 0 auto 20px auto;
+}
+.ftco-section:nth-of-type(even) {
+    background: #0f0f0f;
+}
+
+.ftco-section:nth-of-type(odd) {
+    background: #141414;
+}
+p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+.section-divider {
+    width: 60px;
+    height: 3px;
+    background: #f4b400;
+    margin: 15px auto 40px auto;
+    border-radius: 3px;
 }
