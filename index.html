@@ -318,7 +318,7 @@
           <div class="col-md-10 heading-section text-center ftco-animate">
           	<h1 class="big big-2">Resume</h1>
             <h2 class="mb-4">Resume</h2>
-            <p>Product Consultant with 5 yrs experience in Product Management involve in digitalizing the environment by creating innovative products. My mission is to design and develop products aimed at adding value to the business by enhancing customer satisfaction.</p>
+            <p>Product & Growth Analyst with 5+ years of experience in SaaS, funnel optimization, experimentation, and data-driven product strategy.</p>
           </div>
         </div>
 
@@ -329,7 +329,7 @@
 		<br>
 		
 		<div class="row">
-			<div class="col-md-6 project-card">
+			<div class="col-md-12 project-card">
 				<div class="resume-wrap ftco-animate">
 					<span class="date">2024-Present</span>
 					<h2>Product Consultant</h2>
@@ -345,7 +345,7 @@
 
 			</div>
 
-				<div class="col-md-6 project-card">
+				<div class="col-md-12 project-card">
 					<div class="resume-wrap ftco-animate">
 						<span class="date">2023-2024</span>
 						<h2>Product Analyst</h2>
@@ -361,7 +361,7 @@
 
 				</div>
 
-				<div class="col-md-6 project-card">
+				<div class="col-md-12 project-card">
 					<div class="resume-wrap ftco-animate">
 						<span class="date">2022-2023</span>
 						<h2>Product Analyst</h2>
@@ -377,7 +377,7 @@
 
 				</div>
 
-				<div class="col-md-6 project-card">
+				<div class="col-md-12 project-card">
 					<div class="resume-wrap ftco-animate">
 						<span class="date">2021-2022</span>
 						<h2>Business Analyst</h2>
@@ -393,7 +393,7 @@
 
 				</div>
 
-				<div class="col-md-6 project-card">
+				<div class="col-md-12 project-card">
 					<div class="resume-wrap ftco-animate">
 						<span class="date">2017-2018</span>
 						<h2>Data Analyst</h2>
@@ -500,7 +500,7 @@
 
 
 		      <!-- Project 1: Ecommerce Growth Analytics -->
-               <div class="col-md-4 d-flex ftco-animate">
+               <div class="col-lg-4 col-md-6 d-flex ftco-animate">
                  <div class="blog-entry justify-content-end project-card">
                  <a href="https://github.com/amitr2k11/ecommerce-growth-analytics" 
                    class="block-20 zoom-effect" 
@@ -523,7 +523,7 @@
 
 
            <!-- Project 2: Portfolio Website -->
-            <div class="col-md-4 d-flex ftco-animate">
+            <div class="col-lg-4 col-md-6 d-flex ftco-animate">
              <div class="blog-entry justify-content-end project-card">
                   <a href="https://amitr2k11.github.io/amit/" 
                    class="block-20 zoom-effect" 
@@ -545,7 +545,7 @@
           </div>
 
   <!-- Project 3: RAG Chatbot -->
-  <div class="col-md-4 d-flex ftco-animate">
+  <div class="col-lg-4 col-md-6 d-flex ftco-animate">
     <div class="blog-entry justify-content-end project-card">
       <a href="https://github.com/amitr2k11/RAG-Portfolio-Backend" 
          class="block-20 zoom-effect" 
@@ -567,7 +567,7 @@
   </div>
 
     <!-- Project 4: YouTube Mixtape Automation -->
-<div class="col-md-4 d-flex ftco-animate">
+<div class="col-lg-4 col-md-6 d-flex ftco-animate">
   <div class="blog-entry justify-content-end project-card">
     <a href="https://github.com/amitr2k11/youtube-mixtape-automation" 
        class="block-20 zoom-effect" 
@@ -753,20 +753,9 @@
   
   <script src="js/main.js"></script>
 
+<div id="chatbox" class="chatbox">
 <!-- CHATBOT STYLES -->
 <style>
-#chatbot {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 320px;
-  background: #111;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.6);
-  font-family: Arial, sans-serif;
-  color: #fff;
-  z-index: 9999;
-}
 
 #chat-header {
   background: #f4b400;
@@ -930,6 +919,9 @@ function sendPreset(text) {
   sendMessage();
 }
 </script>
+
+</div>
+
 <script>
 const counters = document.querySelectorAll('.counter');
 
@@ -954,5 +946,18 @@ const animateCounters = () => {
 window.addEventListener('load', animateCounters);
 </script>
 <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+
+<button id="chat-toggle" class="chat-toggle">
+    💬
+</button>
+<script>
+const toggleBtn = document.getElementById("chat-toggle");
+const chatbox = document.getElementById("chatbox");
+
+toggleBtn.addEventListener("click", () => {
+    chatbox.style.display =
+        chatbox.style.display === "block" ? "none" : "block";
+});
+</script>
   </body>
 </html>

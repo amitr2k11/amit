@@ -9744,8 +9744,8 @@ textarea.form-control {
 }
 
 .project-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(244, 180, 0, 0.15);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(244, 180, 0, 0.15);
     border: 1px solid rgba(244, 180, 0, 0.3);
 }
 
@@ -9775,7 +9775,7 @@ html {
     scroll-behavior: smooth;
 }
 section {
-    padding: 100px 0;
+    padding: 80px 0;
 }
 .section-divider {
     width: 80px;
@@ -9871,4 +9871,47 @@ p {
 .projects-banner .btn:hover {
     transform: translateY(-4px);
     box-shadow: 0 15px 30px rgba(244, 180, 0, 0.4);
+}
+.chat-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #f4b400;
+    color: #000;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.chatbox {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 320px;
+    height: 420px;
+    background: #111;
+    border-radius: 10px;
+    display: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    z-index: 9999;
+}
+html, body {
+    overflow-x: hidden;
+}
+.resume-wrap {
+    padding: 25px 30px;
+}
+.ftco-section h2 {
+    text-align: center;
+}
+body {
+    letter-spacing: 0.3px;
+}
+.hero-heading {
+    max-width: 750px;
+    margin: 0 auto 20px auto;
 }
