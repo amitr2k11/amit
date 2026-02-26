@@ -9933,3 +9933,21 @@ p {
     margin: 15px auto 40px auto;
     border-radius: 3px;
 }
+.featured-label {
+  color: #f4b400;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.project-buttons {
+  margin-top: 15px;
+}
+
+.project-buttons .btn {
+  margin-right: 8px;
+  font-size: 13px;
+  padding: 6px 12px;
+}
