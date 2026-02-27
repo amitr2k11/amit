@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://amitr2k11.github.io/amit/sitemap.xml
